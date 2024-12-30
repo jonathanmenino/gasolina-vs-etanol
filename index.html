@@ -8,64 +8,69 @@
     <title>Etanol ou Gasolina?</title>
   </head>
   <body>
-    <div class="container-bomba">
-      <img
-        class="bomba"
-        src="./img/img-fuel-pump.png"
-        alt="Bomba de Gasolina"
-        width="320px"
-        height="568px"
-      />
-    </div>
+    <div class="container-site">
+      <div class="container-bomba">
+        <img
+          class="bomba"
+          src="./img/img-fuel-pump.png"
+          alt="Bomba de Gasolina"
+        />
+      </div>
 
-    <div class="container main-container">
-      <main>
-        <div class="title">
-          <h1>
-            <p>Abastecer com</p>
-            <p>
-              Gasolina <br />
-              ou Etanol?
+      <div class="container main-container">
+        <main>
+          <div class="title">
+            <h1>
+              <p>Abastecer com</p>
+              <p>
+                Gasolina <br />
+                ou Etanol?
+              </p>
+            </h1>
+            <img
+              src="./img/icon-fuel-pump.svg"
+              alt="Ícone Bomba de Gasolina"
+              width="50px"
+              height="53px"
+            />
+          </div>
+          <div class="container calculadora">
+            <div class="field preco-gasolina">
+              <label for="preco-gasolina">Preço da Gasolina</label>
+              <input class="field-box" type="number" name="preco-gasolina" />
+              <span class="rs-label">R$</span>
+              <span class="litro-label">/litro</span>
+            </div>
+            <div class="field preco-etanol">
+              <label for="preco-etanol">Preço do Etanol</label>
+              <input class="field-box" type="number" name="preco-etanol" />
+              <span class="rs-label">R$</span>
+              <span class="litro-label">/litro</span>
+            </div>
+            <button class="btn-calcular">
+              <span>Calcular</span>
+              <img
+                src="./img/icon-drop.svg"
+                alt=""
+                width="25px"
+                height="32px"
+              />
+            </button>
+          </div>
+          <div class="container resultado inativo">
+            <p class="resultado-titulo">É melhor abastecer com</p>
+            <p class="resultado-combustivel">resultado</p>
+            <p>Você poderá fazer em média</p>
+            <p class="resultado-porcentagem">
+              <span class="porcentagem">X%</span> KMs a mais
             </p>
-          </h1>
-          <img
-            src="./img/icon-fuel-pump.svg"
-            alt="Ícone Bomba de Gasolina"
-            width="50px"
-            height="53px"
-          />
-        </div>
-        <div class="container calculadora">
-          <div class="field preco-gasolina">
-            <label for="preco-gasolina">Preço da Gasolina</label>
-            <input class="field-box" type="number" name="preco-gasolina" />
-            <span class="rs-label">R$</span>
-            <span class="litro-label">/litro</span>
+            <p>
+              do que se abastecesse o mesmo valor em
+              <span class="inverso">etanol</span>.
+            </p>
           </div>
-          <div class="field preco-etanol">
-            <label for="preco-etanol">Preço do Etanol</label>
-            <input class="field-box" type="number" name="preco-etanol" />
-            <span class="rs-label">R$</span>
-            <span class="litro-label">/litro</span>
-          </div>
-          <button class="btn-calcular">
-            <span>Calcular</span>
-            <img src="./img/icon-drop.svg" alt="" width="25px" height="32px" />
-          </button>
-        </div>
-        <div class="container resultado inativo">
-          <p class="resultado-titulo">É melhor abastecer com</p>
-          <p class="resultado-combustivel">resultado</p>
-          <p>Você poderá fazer em média</p>
-          <p class="resultado-porcentagem">
-            <span class="porcentagem">X%</span> KMs a mais
-          </p>
-          <p>
-            do que se abastecesse o mesmo valor em
-            <span class="inverso">etanol</span>.
-          </p>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
