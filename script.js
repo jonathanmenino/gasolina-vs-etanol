@@ -40,6 +40,7 @@ const handleButton = () => {
     campoInvalido.classList.remove("inativo");
   } else {
     containerResultado.classList.remove("inativo");
+    containerResultado.scrollIntoView();
     campoInvalido.classList.add("inativo");
   }
 };

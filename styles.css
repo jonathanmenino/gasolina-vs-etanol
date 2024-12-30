@@ -18,6 +18,7 @@ input[type="number"] {
 * {
   font-family: "Inter", sans-serif;
   color: #211512;
+  scroll-behavior: smooth;
 }
 
 body {
